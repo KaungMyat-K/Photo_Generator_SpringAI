@@ -13,7 +13,7 @@ public class GenAIController {
     @Autowired
     private ChatService chatService;
 
-    @GetMapping("ask-ai")
+    @GetMapping("/ask-ai")
     public String getResponse(@RequestParam String prompt){
        return chatService.getResponse(prompt);
     }
